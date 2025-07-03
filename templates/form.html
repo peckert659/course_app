@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Formulaire CAS</title></head>
+<body>
+  <h1>Remplir le formulaire CAS</h1>
+  <form method="post">
+    <label>Nom: <input name="name" required></label><br>
+    <label>Titre: <input name="title" required></label><br>
+    <label>Détail Groupe 1: <input name="group1_detail"></label><br>
+    <label>Détail Groupe 2: <input name="group2_detail"></label><br>
+    <label>Transport:
+      <select name="transport">
+        <option value="voiture">Voiture</option>
+        <option value="train">Train</option>
+      </select>
+    </label><br>
+    <label>Repas:
+      <select name="meal">
+        <option value="restaurant">Restaurant</option>
+        <option value="picnic">Picnic</option>
+      </select>
+    </label><br>
+    <label>Départ Aller: <input name="aller_dep"></label><br>
+    <label>Arrivée Aller: <input name="aller_arr"></label><br>
+    <label>Départ Retour: <input name="retour_dep"></label><br>
+    <label>Arrivée Retour: <input name="retour_arr"></label><br>
+    <label>Indisponibilités: <input name="unavailable"></label><br>
+    <label>Lien SuisseMobile: <input name="url"></label><br>
+    <label><input type="checkbox" name="saison_jas"> Saison idéale (JAS)</label><br><br>
+    <button type="submit">Générer le PDF</button>
+  </form>
+</body>
+</html>
